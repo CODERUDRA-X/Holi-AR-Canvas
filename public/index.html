@@ -3,32 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holi AR Canvas | By CODERUDRA-X</title>
-    <link rel="stylesheet" href="../src/css/style.css">
+    <title>Holi Pro AR Pen | CODERUDRA-X</title>
+    
+    <link rel="stylesheet" href="style.css">
     
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous" defer></script>
     
-    <script src="../src/js/main.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <div id="app-container">
-        <canvas id="ar-canvas"></canvas>
-        <video id="input-video" playsinline style="display:none;"></video>
-        
-        <div id="ui-overlay">
-            <span class="brand-text">CODERUDRA-X AR</span>
-        </div>
+    <div id="ui"> <b>🌈 Happy होली 🫟</b> </div>
+    
+    <video id="vid" playsinline></video>
+    <canvas id="c"></canvas>
 
-        <div id="controls-overlay" style="position: absolute; bottom: 20px; left: 20px; z-index: 10;">
-            <button id="toggle-eraser" style="background: #222; color: #fff; padding: 10px 15px; border: 2px solid var(--neon-accent); border-radius: 5px; cursor: pointer; margin-right: 10px;">
-                Eraser Mode: OFF
-            </button>
-            <button id="clear-all" style="background: #ff0000; color: #fff; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">
-                Clear All
-            </button>
-        </div>
-        </div>
+    <div id="watermark">CODERUDRA-X</div>
 </body>
 </html>
