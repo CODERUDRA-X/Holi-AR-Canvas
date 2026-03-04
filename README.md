@@ -23,7 +23,8 @@ Because this app requests webcam access, modern browsers require it to be run on
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/your-username/Holi-AR-Canvas.git](https://github.com/CODERUDRA-X/Holi-AR-Canvas.git)
+   git clone [https://github.com/CODERUDRA-X/Holi-AR-Canvas.git]
+(https://github.com/CODERUDRA-X/Holi-AR-Canvas.git)
 
 
 Navigate to the directory:
