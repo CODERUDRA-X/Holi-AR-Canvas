@@ -23,7 +23,7 @@ Because this app requests webcam access, modern browsers require it to be run on
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/your-username/Holi-AR-Canvas.git](https://github.com/your-username/Holi-AR-Canvas.git)
+   git clone [https://github.com/your-username/Holi-AR-Canvas.git](https://github.com/CODERUDRA-X/Holi-AR-Canvas.git)
 
 
 Navigate to the directory:
@@ -44,4 +44,4 @@ Eraser Functionality: Mapping a different gesture (like a closed fist) to clear 
 
 Performance Tuning: Experimenting with WebGL or Three.js for handling the rendering loop to support more complex particle effects instead of simple strokes.
 
-Built with ❤️ by Shreyansh Srivastava (CODERUDRA-X)
+Built with 💜 by CODERUDRA-X
