@@ -1,48 +1,154 @@
-# 🎨 Holi AR Canvas by CODERUDRA-X
+🎨 Holi AR Canvas by CODERUDRA-X
 
-An interactive, browser-based Augmented Reality experiment built to celebrate Holi. This project utilizes computer vision to track hand movements in real-time, allowing users to draw neon "Gulal" (colors) in the air using just their webcam.
+An interactive, browser-based Augmented Reality experiment built to celebrate Holi.
+This project utilizes computer vision to track hand movements in real-time, allowing users to draw neon "Gulal" in the air using just their webcam.
 
-## 🚀 The Vision
-I wanted to build a fun, engaging way to celebrate Holi digitally. Instead of standard apps, I opted for an AR experience using Vanilla JS and MediaPipe to keep it lightweight and accessible directly via a web browser.
+---
 
-## 🧠 Technical Overview
-* **Computer Vision:** Employs [MediaPipe Hands](https://google.github.io/mediapipe/solutions/hands.html) for robust, low-latency hand tracking (specifically targeting landmark `8` - Index Tip, and `4` - Thumb Tip).
-* **Gesture Recognition:** Implements a custom Euclidean distance calculation between the thumb and index finger to detect a "pinch" gesture.
-  * **Open Hand:** Triggers the drawing state.
-  * **Pinch:** Stops drawing and automatically cycles to the next neon color in the palette.
-* **Rendering:** Uses the HTML5 `<canvas>` API with custom shadow/glow properties (`shadowBlur`, `shadowColor`) to simulate vibrant neon strokes over a mirrored video feed.
-* **Architecture:** Structured with a clean separation of concerns (HTML view, CSS styling, and JS logic separated) for maintainability.
+🚀 The Vision
 
-## 🛠️ Stack & Setup
-* **HTML5 / CSS3**
-* **Vanilla JavaScript (ES6)**
-* **MediaPipe JS Solution API**
+I wanted to build a fun, engaging way to celebrate Holi digitally.
+Instead of standard applications, I opted for an AR spatial experience using Vanilla JS and MediaPipe to keep it lightweight, zero-friction, and accessible directly via any modern web browser.
 
-### Running Locally
-Because this app requests webcam access, modern browsers require it to be run on a secure origin (HTTPS) or localhost.
+---
 
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/CODERUDRA-X/Holi-AR-Canvas.git]
-(https://github.com/CODERUDRA-X/Holi-AR-Canvas.git)
+🕹️ Spatial Interaction Manual (How to Use)
 
+To create a seamless AR experience, this system maps physical hand gestures combined with keyboard triggers to execute spatial commands.
 
-Navigate to the directory:
+🖌️ Trace & Draw
 
-Bash
-cd Holi-AR-Canvas/public
-Run a local server. If you have Python installed, you can use:
+Hold "Shift" + Move your Index Finger
 
-Bash
+The AI locks onto Landmark 8 to trace your hand's path and render glowing neon strokes in 3D space.
+
+---
+
+🧽 Precision Spatial Eraser
+
+Hold "Alt" + Swipe your hand
+
+Engages the destination-out masking protocol, allowing you to erase mistakes without damaging the video background.
+
+---
+
+💦 Particle Color Splash
+
+Press "S" + Make a Sprinkle Gesture
+
+Triggers the mathematical physics engine to generate a randomized Gulal splash at your hand coordinates.
+
+---
+
+🎨 Cycle Palette
+
+Press "C" + Pinch your fingers
+
+Switches to the next vibrant neon color in the palette.
+
+---
+
+💥 Flush Canvas
+
+Press "Spacebar" + Snap or Clap
+
+Instantly wipes the multi-layered in-memory buffer, giving you a fresh canvas.
+
+---
+
+🧠 Technical Overview
+
+Computer Vision
+
+Uses MediaPipe Hands for robust, low-latency hand tracking and spatial coordinate calculation.
+
+Gesture Recognition
+
+Implements Euclidean distance mathematics between hand landmarks to detect gestures.
+
+Dual-Layer Rendering
+
+Uses HTML5 "<canvas>" API with an invisible in-memory buffer.
+
+Key techniques:
+
+- "globalCompositeOperation"
+- "shadowBlur"
+- "shadowColor"
+
+This creates glowing neon strokes on top of a mirrored video feed.
+
+Architecture
+
+Structured with clean separation:
+
+- HTML → View
+- CSS → Styling
+- JavaScript → Logic
+
+This ensures modularity and maintainability.
+
+---
+
+🌟 Core Features (V1.1)
+
+Destructive vs Non-Destructive Editing
+
+A functional eraser implemented using HTML5 Canvas compositing ("destination-out").
+
+Dynamic Sizing
+
+The eraser stroke dynamically increases thickness for better user experience.
+
+---
+
+🛠️ Stack & Setup
+
+- HTML5
+- CSS3
+- Vanilla JavaScript (ES6)
+- MediaPipe JS Solution API
+
+---
+
+⚙️ Running Locally
+
+Since this application requires hardware-level webcam access, browsers require it to run on HTTPS or localhost.
+
+1️⃣ Clone the repository
+
+git clone https://github.com/CODERUDRA-X/Holi-AR-Canvas.git
+
+2️⃣ Navigate to the project folder
+
+cd Holi-AR-Canvas
+
+3️⃣ Run a local server
+
+If you have Python installed:
+
 python -m http.server 8000
-Open http://localhost:8000 in your browser.
+
+4️⃣ Launch the project
+
+Open this in your browser:
+
+http://localhost:8000
+
+---
 
 🔮 Future Scope
-Eraser Functionality: Mapping a different gesture (like a closed fist) to clear the canvas or erase specific strokes.
 
-## 🌟 New Features (V1.1)
-* **Precision Eraser Mode:** Added a functional eraser using HTML5 Canvas `globalCompositeOperation ("destination-out")`, allowing users to correct strokes without clearing the entire board. The eraser stroke is computationally thicker for better UX.
+Performance Optimization
 
-Performance Tuning: Experimenting with WebGL or Three.js for handling the rendering loop to support more complex particle effects instead of simple strokes.
+Experiment with WebGL / Three.js to support advanced 3D particle effects.
 
-Built with 💜 by CODERUDRA-X
+Advanced Gesture Control
+
+Closed-fist gesture could act as a grab and move tool for drawn objects.
+
+---
+
+<div align="center">Built with 💜 by Shreyansh Srivastava (CODERUDRA-X)
+
+</div>
