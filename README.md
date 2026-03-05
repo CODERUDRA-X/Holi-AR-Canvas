@@ -1,4 +1,4 @@
-🎨 Holi AR Canvas by CODERUDRA-X
+## 🎨 Holi AR Canvas by CODERUDRA-X
 
 An interactive, browser-based Augmented Reality experiment built to celebrate Holi.
 This project utilizes computer vision to track hand movements in real-time, allowing users to draw neon "Gulal" in the air using just their webcam.
