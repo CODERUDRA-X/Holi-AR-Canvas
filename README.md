@@ -149,6 +149,6 @@ Closed-fist gesture could act as a grab and move tool for drawn objects.
 
 ---
 
-<div align="center">Built with 💜 by Shreyansh Srivastava (CODERUDRA-X)
+<div align="center">Built with 💜 by CODERUDRA-X
 
 </div>
